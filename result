@@ -123,12 +123,12 @@ TEST t3_5.txt PASSED
 Running tests for task4
 =====
 
-TEST t4_1.txt FAILED
-TEST t4_2.txt FAILED
-TEST t4_3.txt FAILED
-TEST t4_4.txt FAILED
-TEST t4_5.txt FAILED
-TOTAL 120
+TEST t4_1.txt PASSED
+TEST t4_2.txt PASSED
+TEST t4_3.txt PASSED
+TEST t4_4.txt PASSED
+TEST t4_5.txt PASSED
+TOTAL 140
 
 Run cpplint
 
