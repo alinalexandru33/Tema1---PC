@@ -1,8 +1,27 @@
+#include <math.h>
 #ifndef TASK
 #define TASK 
 
-/* Function to extract bitsNo number of bits from 
+#define maxSize 16
+
+/* Functions to extract bitsNo number of bits from 
    instruction inst on the position pos */
+int extractBits(unsigned short inst, int bitsNo, int pos) {
+    unsigned short ret;
+    int i, bitsValue = 0;
+
+    /* Compute bits value coresponding to the number of bits */
+    for (i = 0; i < bitsNo; i++) {
+        bitsValue += pow(2, i);
+    }
+
+    ret = bitsValue << (sizeof(inst) * 8 - bitsNo - pos);
+    ret &= inst;
+    ret >>= (sizeof(inst) * 8 - bitsNo - pos);
+
+    return ret;
+}
+
 int extractBitsUint(unsigned int inst, int bitsNo, int pos) {
     unsigned int ret;
     int bitsValue;
@@ -103,7 +122,7 @@ char decodeOp(unsigned int op) {
     return ret;
 }
 
-/* Function to make the operation */
+/* Function to execute the operation */
 int executeOp(int left, int right, int op) {
     int ret;
 
