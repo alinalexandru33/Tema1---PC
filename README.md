@@ -1,7 +1,5 @@
 # Tema1---PC Microprocesor
 
-    The project implements how a processor executes operations (very minimalist).
-
         Task 1:
     Decoding the instructions - first 3 bits represent the number of instructions,
     the next 2 * N bits represent N op codes (one op code is formed with 2 bits) and
