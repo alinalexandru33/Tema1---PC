@@ -1,4 +1,4 @@
-# Tema1---PC Microprocesor
+# Tema1---PC Microprocessor
 
         Task 1:
     Decoding the instructions - first 3 bits represent the number of instructions,
